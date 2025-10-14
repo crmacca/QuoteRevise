@@ -34,6 +34,9 @@ const Home = ({ onSelectText, onViewAnalytics }) => {
             <h1 className="text-5xl font-bold text-zinc-800 mb-3">My Texts</h1>
             <p className="text-lg text-zinc-500">Select a text to begin practicing</p>
           </div>
+          <p className='text-gray-400'>
+            © {new Date().getUTCFullYear()} Christian McNamara
+          </p>
           <button
             onClick={() => onViewAnalytics()}
             className="flex items-center gap-3 px-6 py-3 bg-white border-2 border-stone-200 rounded-md hover:bg-stone-50 transition-all shadow-sm"
