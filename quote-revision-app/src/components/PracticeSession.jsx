@@ -318,6 +318,7 @@ const handleMark = () => {
         {/* Palm Card - Centered */}
         <div className="flex-1 flex items-center justify-center mb-12">
           <PalmCard
+            key={currentIndex} // Add this key to force remount on index change
             quote={currentQuote.text}
             showBack={showBack}
             autoFlip={settings.displayMode === 'timed' && !showBack}
